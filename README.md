@@ -7,8 +7,9 @@ Structured Klipper config for Prusa MK3S/+ 3D printer
 ![image](https://user-images.githubusercontent.com/239513/141831272-31b88652-ab3f-4978-8a4c-c54a83817dd1.png)
 
 ## Install
-
-1. Add following to the to `moonraker.conf`
+1. Install https://github.com/mainsail-crew/MainsailOS to SDCard and RPI Zero 2 W
+2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
+3. Add following to the to `moonraker.conf`
 
 ```yml
 [update_manager prusa]
