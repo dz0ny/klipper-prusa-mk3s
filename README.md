@@ -17,5 +17,5 @@ is_system_service: False
 ```
 
 2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` 
-3. Follwo config and adjust settings
-4. Print.
+3. Adjust config to your hardware
+4. Print
