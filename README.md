@@ -21,5 +21,8 @@ is_system_service: False
 ```
 
 2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` 
+4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
+- For USB connection use FLASH_DEVICE=/dev/serial/by-id/Prusa... and PORT0 for serial in menuconfig
+- For RPI connection use FLASH_DEVICE=/dev/serial/by-id/Prusa... and PORT1 for serial in menuconfig
 3. Adjust config to your hardware
-4. Print
+6. Print
