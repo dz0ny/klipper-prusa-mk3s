@@ -8,14 +8,15 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 
 ## Pre-Check
 
-- Get Z offset value from your current firmware (Menu -> Calibration -> Z-offest), you will need it for Klipper config.
+- Get Z offset value from your current firmware (Menu -> Calibration -> Z-offset), you will need it for the Klipper config.
+- Your bed needs to be perpendicular (based on XYZ Calibration). If not you will have to do the skew calibration before printing or you risk crashing your nozzle to the bed.
 - Read https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg
 - Read https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
 ## Install
 1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and RPI Zero 2 W
 2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
-3. Add following to the to `moonraker.conf`
+3. Add the following to the to `moonraker.conf`
 
 ```yml
 [update_manager prusa]
@@ -30,7 +31,7 @@ is_system_service: False
 3. Adjust config to your hardware
 4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
-You will still need USB cable as you cannot flash via internal serial port. You can also use any other computer to compile your firmware.
+You will still need a USB cable as you cannot flash via an internal serial port. You can also use any other computer to compile your firmware.
 
 To use this config, the firmware should be compiled for the AVR atmega2560. To use via serial, in "make menuconfig" select "Enable extra low-level configuration options" and select **serial1** (the RasPi serial) or **serial0** when you plan to connect via the USB.
 
