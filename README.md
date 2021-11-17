@@ -32,7 +32,9 @@ is_system_service: False
 
 You will still need USB cable as you cannot flash via internal serial port. You can also use any othe computer to compile your firmware.
 
-- For USB connection use FLASH_DEVICE=/dev/serial/by-id/Prusa... and PORT0 for serial in menuconfig
-- For RPI native connection use FLASH_DEVICE=/dev/serial/by-id/Prusa... and PORT1 for serial in menuconfig
+To use this config, the firmware should be compiled for the AVR atmega2560. To use via serial, in "make menuconfig" select "Enable extra low-level configuration options" and select **serial1** (the RasPi serial) or **serial0** when making the USB firmware.
+
+To flash:
+`make flash FLASH_DEVICE=/dev/serial/by-id/usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_CZPX0620X004XK70128-if00`
 
 7. Print
