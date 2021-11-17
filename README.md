@@ -28,7 +28,7 @@ is_system_service: False
 
 2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` 
 3. Adjust config to your hardware
-4. 4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
+4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
 You will still need USB cable as you cannot flash via internal serial port. You can also use any othe computer to compile your firmware.
 
