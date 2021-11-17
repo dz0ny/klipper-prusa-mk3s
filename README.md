@@ -30,7 +30,7 @@ is_system_service: False
 3. Adjust config to your hardware
 4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
-You will still need USB cable as you cannot flash via internal serial port. You can also use any othe computer to compile your firmware.
+You will still need USB cable as you cannot flash via internal serial port. You can also use any other computer to compile your firmware.
 
 To use this config, the firmware should be compiled for the AVR atmega2560. To use via serial, in "make menuconfig" select "Enable extra low-level configuration options" and select **serial1** (the RasPi serial) or **serial0** when making the USB firmware.
 
