@@ -12,7 +12,8 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and RPI Zero 2 W
 2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
 3. Update all components under Machine tab, otherwise config might not be able to load
-4. Add the following to the to `moonraker.conf`
+4. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/klipper_config/config```
+5. Add the following to the to `moonraker.conf` to enable automatic updates
 
 ```yml
 [update_manager prusa]
@@ -23,7 +24,7 @@ primary_branch: main
 is_system_service: False
 ```
 
-2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` 
+2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` in your klipper config
 3. Adjust config to your hardware
 4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
