@@ -22,6 +22,7 @@ origin: https://github.com/dz0ny/klipper-prusa-mk3s.git
 path: ~/klipper_config/config
 primary_branch: main
 is_system_service: False
+managed_services: klipper
 ```
 
 2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` in your klipper config
