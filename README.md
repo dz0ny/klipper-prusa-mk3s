@@ -14,7 +14,7 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 3. Update all components under Machine tab, otherwise config might not be able to load
 4. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/printer_data/config/klipper-prusa-mk3s```
 
-  > If you are adding this configuration after installing Klipper via [KIAUH](https://github.com/th33xitus/kiauh), the directory might be different - typically following `~[printer_name]/printer_data/config`
+  > If you are adding this configuration after installing Klipper via [KIAUH](https://github.com/th33xitus/kiauh), the directory might be different - typically following `~/[printer_name]/printer_data/config`, where `[printer_name]` is the name you selected during the Kiauh installation
 
 5. Add the following to the to `moonraker.conf` to enable automatic updates
 
