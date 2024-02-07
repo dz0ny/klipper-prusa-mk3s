@@ -9,14 +9,14 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 - Read https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
 ## Install
-1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and RPI Zero 2 W
-2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
-3. Update all components under Machine tab, otherwise config might not be able to load
-4. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/printer_data/config/klipper-prusa-mk3s```
+1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and whatever recommended Raspberry Pi hardware you have chosen
+2. Connect to your Raspberry Pi via SSH terminal, a popular client is Putty.
+3. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/printer_data/config/klipper-prusa-mk3s```
 
   > If you are adding this configuration after installing Klipper via [KIAUH](https://github.com/th33xitus/kiauh), the directory might be different - typically following `~/[printer_name]/printer_data/config`, where `[printer_name]` is the name you selected during the Kiauh installation
-
-5. Add the following to the to `moonraker.conf` to enable automatic updates
+4. In your web browser, enter the URL or IP address of your MailSailOS instance
+5. Within the MainSail web interface, Update all components under Machine tab, otherwise config might not be able to load
+6. Within Mainsail's folder menus, add the following to the to `moonraker.conf` to enable automatic updates
 
 ```yml
 [update_manager prusa]
@@ -28,9 +28,9 @@ is_system_service: False
 managed_services: klipper
 ```
 
-2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` in your klipper config
-3. Adjust config to your hardware
-4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
+7. Within Mainsail's folder menus, copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` in your klipper config
+8. Adjust config to your hardware
+9. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
 You will still need a USB cable as you cannot flash via an internal serial port. You can also use any other computer to compile your firmware.
 
@@ -39,7 +39,7 @@ To use this config, the firmware should be compiled for the AVR atmega2560. To u
 To flash:
 `make flash FLASH_DEVICE=/dev/serial/by-id/usb-Prusa_Research__prusa3d.com__Original_Prusa_i3_MK3_CZPX0620X004XK70128-if00`
 
-7. Print
+10. Print
 
 
 ## Nice things
